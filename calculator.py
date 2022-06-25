@@ -1,14 +1,12 @@
 # a brilliant creation of a mad mind
 
-a, operator, b = int(input()), input(), int(input())
+from tkinter import *
 
-if operator == '+':
-	answer = a + b 
-elif operator == '-':
-	answer = a - b
-elif operator == '*':
-	answer = a * b
-elif operator == '/':
-	answer = a / b
+wnd = Tk()
+wnd.title('Счеты')
+wnd.geometry('500x700')
+wnd.resizable(False, False)  # неизменяемость окна
 
-print(f'{a} {operator} {b} = {answer}')
+
+
+wnd.mainloop()
